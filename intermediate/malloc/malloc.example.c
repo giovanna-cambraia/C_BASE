@@ -11,7 +11,7 @@ int main() {
     return 0;
 }
 
-// Maloc is basically a systax where it means, "hey system, reserve memory for me"
+// Malloc is basically a systax where it means, "hey system, reserve memory for me"
 // It asks OS for memory
 // OS gives address 
 // Store address in pointer
