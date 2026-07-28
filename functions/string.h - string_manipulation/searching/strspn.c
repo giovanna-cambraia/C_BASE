@@ -11,7 +11,7 @@ int main(void) {
     return 0;
 }
 
-// strspn returns the length of the initial segment of a string that consists entirely of characters from a given set ("spn" = "span"). 
+// ? strspn returns the length of the initial segment of a string that consists entirely of characters from a given set ("spn" = "span"). 
 // Doesn't return a pointer — returns a size_t count.
 
 // Practical use — simple validation that a string starts with only allowed characters:
@@ -28,4 +28,4 @@ if (valid_len == strlen(username)) {
 // This pattern (checking strspn result equals strlen) is a genuinely reasonable, simple way to do an allowlist-based input validation —
 // much sounder than a strstr-based blacklist approach, since you're explicitly defining what's permitted rather than trying to enumerate everything that's forbidden.
 
-// No overflow risk — it only reads, doesn't write.
+// ? No overflow risk — it only reads, doesn't write.

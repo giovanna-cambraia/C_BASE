@@ -10,8 +10,8 @@ int main() {
     return 0;
 }
 
-// Sprintf formats output into a string buffer of a stream.
+// ? Sprintf formats output into a string buffer of a stream.
 
-// OBS - Security Flag(HIGH RISK): sprintf has no bounds checking —
+// ! OBS - Security Flag(HIGH RISK): sprintf has no bounds checking —
 // if the formatted result exceeds buf's size, it overflows the buffer, corrupting adjacent memory.
-// Prefer snprintf instead — always.
+// * Prefer snprintf instead — always.

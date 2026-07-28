@@ -18,7 +18,7 @@ int main(void) {
     return 0;
 }
 
-// ferror checks whether an error indicator is set on the stream (distinct from EOF).
+// ? ferror checks whether an error indicator is set on the stream (distinct from EOF).
 
-// OBS - Good practice: always distinguish EOF from a genuine I/O error after a read loop ends — treating a hardware/I/O error as "just ran out of data" can mask real problems
-// (corrupted reads, disconnected drives, etc.) that a program should surface rather than silently ignore.
+// * OBS - Good practice: always distinguish EOF from a genuine I/O error after a read loop ends — treating a hardware/I/O error as "just ran out of data" can mask real problems
+// * (corrupted reads, disconnected drives, etc.) that a program should surface rather than silently ignore.

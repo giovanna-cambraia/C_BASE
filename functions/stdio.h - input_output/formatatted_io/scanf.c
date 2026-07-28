@@ -16,11 +16,11 @@ int main() {
     return 0;
 }
 
-// Scanf reads formatted input from stdin.
+// ? Scanf reads formatted input from stdin.
 
-// OBS - Security Flag: scanf("%s", name) without a width limit is as dangerous as gets — 
+// ! OBS - Security Flag: scanf("%s", name) without a width limit is as dangerous as gets — 
 // it will write past the end of name if the input is longer than the buffer (classic buffer overflow). 
 // Always specify a max field width matching your buffer size minus 1.
 
-// scanf return value should be checked — it returns the number of successfully matched items.
+// * scanf return value should be checked — it returns the number of successfully matched items.
 // Ignoring it can leave variables uninitialized if the input didn't match, and can lead to using garbage values later.

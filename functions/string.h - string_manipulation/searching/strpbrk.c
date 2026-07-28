@@ -14,7 +14,7 @@ int main(void) {
     return 0;
 }
 
-// strpbrk finds the first occurrence in a string of any character from a given set (pbrk = "pointer break").
+// ? strpbrk finds the first occurrence in a string of any character from a given set (pbrk = "pointer break").
 
 // Useful for finding the first occurrence of any "special" character:
 
@@ -24,5 +24,5 @@ if (special != NULL) {
     printf("Contains a special character\n");
 }
 
-// Same NULL-check requirement as the other search functions. No major security flag beyond the standard "check before dereferencing" rule —
-// though note it's just as unsuitable as strstr for use as a security/sanitization filter on its own.
+// ? Same NULL-check requirement as the other search functions. No major security flag beyond the standard "check before dereferencing" rule —
+// ? though note it's just as unsuitable as strstr for use as a security/sanitization filter on its own.

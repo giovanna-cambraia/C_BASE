@@ -9,5 +9,5 @@ int main(void) {
     return 0;
 }
 
-// putchar writes a single characrer to stdout.
-// Simple, safe, no buffer involved. No security flag.
+// ? putchar writes a single characrer to stdout.
+// ? Simple, safe, no buffer involved. No security flag.

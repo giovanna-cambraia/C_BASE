@@ -18,7 +18,7 @@ int main(void) {
     return 0;
 }
 
-// fputs writes to a stram - like puts, but does not add a newline, and lets you choose the stream.
+// ? fputs writes to a stram - like puts, but does not add a newline, and lets you choose the stream.
 
 // No overflow risk since it just writes exactly the bytes in the string up to its null terminator.
-// The only real gotcha is forgetting the \n since — unlike puts — it doesn't add one for you.
+// ? The only real gotcha is forgetting the \n since — unlike puts — it doesn't add one for you.

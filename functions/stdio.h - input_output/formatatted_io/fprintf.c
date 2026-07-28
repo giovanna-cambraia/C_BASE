@@ -24,7 +24,7 @@ int main() {
     return 0;
 }
 
-// Same as printf & scanf but targeting a stream(file, stderr, etc) instead of always stdoun / stdin.
+// ? Same as printf & scanf but targeting a stream(file, stderr, etc) instead of always stdoun / stdin.
 
-// OBS - Securiy Flag: Same format-string caution as printf/scanf — never pass untrusted data as the format argument.
-// Also always check that fopen succeeded before using the stream; dereferencing a NULL FILE* is undefined behavior.
+// ! OBS - Securiy Flag: Same format-string caution as printf/scanf — never pass untrusted data as the format argument.
+// * Also always check that fopen succeeded before using the stream; dereferencing a NULL FILE* is undefined behavior.

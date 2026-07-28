@@ -9,8 +9,8 @@ int main(void) {
     return 0;
 }
 
-// remove deletes a file from the filesystem.
+// ? remove deletes a file from the filesystem.
 
-// OBS - Security Flag: if the filename comes from user/external input, this is a dangerous primitive —
+// ! OBS - Security Flag: if the filename comes from user/external input, this is a dangerous primitive —
 // an attacker who controls the filename argument (path traversal, symlink tricks) could delete arbitrary files the process has permission to remove.
-// Never pass unsanitized/untrusted paths to remove.
+// * Never pass unsanitized/untrusted paths to remove.

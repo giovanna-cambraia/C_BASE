@@ -11,7 +11,7 @@ int main(void) {
 // This line gets a newline added automatically.
 // So does this one.
 
-// puts writes a whole string to stdout and automatically appends a newline.
+// ? puts writes a whole string to stdout and automatically appends a newline.
 
 // Note: unlike printf, puts doesn't do any format interpretation, so puts(some_string)
 // is actually safer than printf(some_string) when some_string comes from an untrusted source —

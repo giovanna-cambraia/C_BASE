@@ -15,7 +15,7 @@ int main(void) {
     return 0;
 }
 
-// strstr finds the first occurrence of an entire substring within a string (not just a single character).
+// ? strstr finds the first occurrence of an entire substring within a string (not just a single character).
 
 // Practical use — simple keyword/pattern checking:
 
@@ -24,13 +24,13 @@ if (strstr(url, "login") != NULL) {
     printf("This looks like a login page\n");
 }
 
-// OBS - Security Flags:
+// ! OBS - Security Flags:
 
-// Always NULL-check the result before using it, same as strchr/strrchr.
-// Not a security boundary. A very common — and dangerous — misuse is treating strstr as if it validates input safety, e.g.:
+// * Always NULL-check the result before using it, same as strchr/strrchr.
+// ! Not a security boundary. A very common — and dangerous — misuse is treating strstr as if it validates input safety, e.g.:
 
 if (strstr(user_input, "<script>") == NULL) {
-    // "safe" to use in HTML? NO — trivially bypassed
+    // ! "safe" to use in HTML? NO — trivially bypassed
 }
 
 // This kind of naive substring blacklist check is well known to be bypassable (case variations, encoding tricks, splitting the pattern across tags, etc.)
@@ -38,6 +38,6 @@ if (strstr(user_input, "<script>") == NULL) {
 // Never use substring search alone as an input sanitization/security mechanism —
 // use a proper parser, allowlist, or established sanitization library instead.
 
-// Performance note: naive implementations are O(n×m) in the worst case (text length × pattern length) —
-// for very large inputs from untrusted sources, this could theoretically be leveraged for algorithmic denial-of-service,
-// though most standard library implementations are reasonably optimized.
+// * Performance note: naive implementations are O(n×m) in the worst case (text length × pattern length) —
+// * for very large inputs from untrusted sources, this could theoretically be leveraged for algorithmic denial-of-service,
+// * though most standard library implementations are reasonably optimized.

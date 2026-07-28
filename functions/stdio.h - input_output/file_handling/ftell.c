@@ -17,9 +17,9 @@ int main(void) {
     return 0;
 }
 
-// ftell returns the current position in the stream (as a long), useful for getting the file size or bookmarking a position.
+// ? ftell returns the current position in the stream (as a long), useful for getting the file size or bookmarking a position.
 
-// OBS - Security Flag: ftell returns -1L on error — always check, especially before using the result to malloc a buffer:
+// ! OBS - Security Flag: ftell returns -1L on error — always check, especially before using the result to malloc a buffer:
 
 if (size < 0) {
     fprintf(stderr, "ftell failed\n");
@@ -29,5 +29,5 @@ if (size < 0) {
 char *buf = malloc(size + 1);
 if (buf == NULL) { /* handle allocation failure */ }
 
-// Skipping the error check and blindly passing a -1 (which becomes a huge unsigned value in some contexts)
-// to malloc can trigger a massive misallocation or heap corruption.
+// ! Skipping the error check and blindly passing a -1 (which becomes a huge unsigned value in some contexts)
+// ! to malloc can trigger a massive misallocation or heap corruption.

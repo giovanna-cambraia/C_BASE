@@ -17,9 +17,9 @@ int main(void) {
     return 0;
 }
 
-// fclose closes a stream and flushes any buffered output.
+// ? fclose closes a stream and flushes any buffered output.
 
-// OBS - Security Flags: Not checking fclose's return value can hide write errors —
+// ! OBS - Security Flags: Not checking fclose's return value can hide write errors —
 // for buffered output, data may not actually hit disk until fclose flushes it,
 // and that flush can fail (e.g., disk full). Silently ignoring this can lead to silent data loss.
-// Also: forgetting to call fclose at all leaks file descriptors, which can exhaust OS limits in long-running programs.
+// ! Also: forgetting to call fclose at all leaks file descriptors, which can exhaust OS limits in long-running programs.

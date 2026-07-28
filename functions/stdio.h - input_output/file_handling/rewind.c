@@ -20,7 +20,7 @@ int main(void) {
     return 0;
 }
 
-// rewind resets the stream position to the beginning - shorthand for seek(f, 0, SEEK_SET)
+// ? rewind resets the stream position to the beginning - shorthand for seek(f, 0, SEEK_SET)
 // (and also clears the error/EOF indicators, which plain fseek does not).
 
 // No return value to check (unlike fseek) — that's actually a minor usability wart, not a security issue.

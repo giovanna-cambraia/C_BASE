@@ -15,12 +15,12 @@ int main(void) {
     return 0;
 }
 
-// getchar reads a single character from stdin. 
-// Returns an int (not char!) because it needs to represent EOF (usually -1) in addition to all possible character values.
+// ? getchar reads a single character from stdin. 
+// ? Returns an int (not char!) because it needs to represent EOF (usually -1) in addition to all possible character values.
 
 
 // Why int and not char? If you declare char c; instead, on platforms where char is unsigned,
 // EOF (-1) can never actually be matched by the comparison, because -1 gets reinterpreted as 255 when stored in an unsigned char.
-// This causes an infinite loop reading garbage forever. Always use int to store the return value of getchar.
+// ! This causes an infinite loop reading garbage forever. Always use int to store the return value of getchar.
 
 // No real security flag here — it reads one character at a time, so no buffer overflow risk.

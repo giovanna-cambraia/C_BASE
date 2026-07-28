@@ -15,7 +15,7 @@ int main(void) {
     return 0;
 }
 
-// strncmp same as strcmp, but compares at most n characters.
+// ? strncmp same as strcmp, but compares at most n characters.
 
 // Common practical use: checking a prefix.
 
@@ -24,6 +24,6 @@ if (strncmp(command, "delete", 6) == 0) {
     printf("This is a delete command\n");
 }
 
-// Gotcha: strncmp stops at n characters or at the first null terminator, whichever comes first — it won't read past the end of a shorter string,
+// ? Gotcha: strncmp stops at n characters or at the first null terminator, whichever comes first — it won't read past the end of a shorter string,
 // so it's generally safe from over-reading as long as n is a reasonable, sane value (not attacker-controlled to something huge with mismatched buffer sizes).
 // Same timing-attack caveat as strcmp applies if used for secret comparison.

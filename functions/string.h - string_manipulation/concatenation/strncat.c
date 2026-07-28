@@ -12,16 +12,16 @@ int main(void) {
     return 0;
 }
 
-// strncat appends at most n characters from src onto dest, then always null-terminates.
+// ? strncat appends at most n characters from src onto dest, then always null-terminates.
 
-// strncat is genuinely safer than strcat in one important way that strncpy is not safer than strcpy:
-// trncat always null-terminates the result, as long as dest's buffer was already valid. So it doesn't have strncpy's "missing terminator" gotcha.
+// ? strncat is genuinely safer than strcat in one important way that strncpy is not safer than strcpy:
+// ? trncat always null-terminates the result, as long as dest's buffer was already valid. So it doesn't have strncpy's "missing terminator" gotcha.
 
-// The gotcha it does have — the n parameter is easy to get wrong. n is the max number of characters to append from src,
+// ? The gotcha it does have — the n parameter is easy to get wrong. n is the max number of characters to append from src,
 // not the total size of dest. A very common bug:
 
 char dest[20] = "Hello, ";
-strncat(dest, src, sizeof(dest));   // WRONG — sizeof(dest) is 20, but dest already has 7 chars used;
+strncat(dest, src, sizeof(dest));   // ! WRONG — sizeof(dest) is 20, but dest already has 7 chars used;
                                       // this can still overflow because n doesn't account for
                                       // dest's existing content
                                 

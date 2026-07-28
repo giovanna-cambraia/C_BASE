@@ -18,7 +18,7 @@ int main(void) {
     return 0;
 }
 
-// fwrite writes binary data from a buffer to a stream. Mirror of fread.
+// ? fwrite writes binary data from a buffer to a stream. Mirror of fread.
 
-// OBS - Security Flag: just like fread, check the return value — 
-// a short write (disk full, I/O error) can silently corrupt output files if ignored.
+// ! OBS - Security Flag: just like fread, check the return value — 
+// ! a short write (disk full, I/O error) can silently corrupt output files if ignored.

@@ -18,7 +18,7 @@ int main(void) {
     return 0;
 }
 
-// fseek moves the file position indicator to a specific location in the stream.
+// ? fseek moves the file position indicator to a specific location in the stream.
 
 // Reference points: 
 
@@ -27,8 +27,8 @@ int main(void) {
 // SEEK_CUR	     From the current position
 // SEEK_END	     From the end of the file
 
-// Note: on streams opened in text mode, offsets aren't guaranteed to correspond directly to byte positions on all platforms
-// (line-ending translation on Windows). Use binary mode ("rb"/"wb") if needed precise byte offsets.
+// ? Note: on streams opened in text mode, offsets aren't guaranteed to correspond directly to byte positions on all platforms
+// ? (line-ending translation on Windows). Use binary mode ("rb"/"wb") if needed precise byte offsets.
 
-// No major security flag here beyond checking the return value (0 on success, nonzero on failure) — 
-// ignoring failures can cause reads/writes at unintended positions afterward.
+// ? No major security flag here beyond checking the return value (0 on success, nonzero on failure) — 
+// ? ignoring failures can cause reads/writes at unintended positions afterward.

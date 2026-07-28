@@ -7,13 +7,13 @@ int main(void) {
     return 0;
 }
 
-// printf writes formatted output to stdout.
-// %d int, %f float/double, %s string, %c char, %p pointer, %x hex.
+// ? printf writes formatted output to stdout.
+// ? %d int, %f float/double, %s string, %c char, %p pointer, %x hex.
 // Returns the number of characters written (or negative on error) — rarely checked but useful for logging.
 
-// OBS - Security Flag: Never pass user-controlled as the format string itself
+// ! OBS - Security Flag: Never pass user-controlled as the format string itself
 
-printf(user_input);          // DANGEROUS
+printf(user_input);          // ! DANGEROUS
 printf("%s", user_input);    // SAFE
 
 // If user_input contains %s or %n, this is a classic format string vulnerability — 

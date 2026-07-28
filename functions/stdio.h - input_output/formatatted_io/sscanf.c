@@ -10,8 +10,8 @@ int main() {
     return 0;
 }
 
-// Sscanf parses formatted data out of a string(instead of stdin).
+// ? sscanf parses formatted data out of a string(instead of stdin).
 
-// OBS - Security Flag: Same rule as scanf — always bound %s fields with a width.
+// ! OBS - Security Flag: Same rule as scanf — always bound %s fields with a width.
 // sscanf is otherwise generally safer than scanf since the source string is already known/fixed in memory, 
 // but overflow risk on unbounded %s is identical.
