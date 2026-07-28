@@ -12,7 +12,7 @@ int main(void) {
     return 0;
 }
 
-// system executes a command by passing it to the operating system's command shell (/bin/sh on POSIX systems, cmd.exe on Windows).
+// ? system executes a command by passing it to the operating system's command shell (/bin/sh on POSIX systems, cmd.exe on Windows).
 
 // ! Security flag: this is one of the single most dangerous functions in the standard library when combined with any untrusted input,
 // ! and deserves the most serious treatment of anything covered so far.

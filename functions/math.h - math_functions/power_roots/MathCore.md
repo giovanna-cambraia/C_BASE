@@ -1,0 +1,3 @@
+# General theme for <math.h> domain errors
+
+None of these functions crash on invalid input — they return NaN/infinity and (usually) set errno, which means silence is the default failure mode. If you don't explicitly check for it (isnan, isinf, or validating inputs beforehand), a domain error can quietly propagate through an entire calculation chain and produce a wrong final answer with no visible error at all — which, depending on what that number feeds into downstream (a loop bound, an array index, a financial calculation), can range from "confusing bug" to "genuinely serious correctness issue."
