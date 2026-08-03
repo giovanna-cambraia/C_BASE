@@ -139,6 +139,35 @@ If input (`scanf`) doesn’t work properly in Code Runner:
 
 ---
 
+## Basic
+
+I/O: printf, scanf, fgets, putchar, getchar, puts
+Strings: strlen, strcpy, strcat, strcmp
+Math: pow, sqrt, fabs, ceil, floor, round
+Conversion: atoi, atof
+Char classification: isdigit, isalpha, isupper, islower, toupper, tolower
+
+## Intermediate (once pointers + memory click — next real milestone)
+
+Memory: malloc, calloc, free, memset, memcpy
+Strings (safer/more powerful): strncpy, strncat, strncmp, strchr, strstr, strtok
+File I/O: fopen, fclose, fread, fwrite, fgets (file mode), fprintf
+Sorting/searching: qsort, bsearch
+Random: rand, srand
+Program control: exit, atexit
+
+This tier requires understanding pointers (since malloc returns one, strtok mutates via pointers, fread/fwrite work on buffers) — this is genuinely the tier where "thinking in C" either clicks or doesn't, since almost everything here touches memory directly.
+
+## Advanced (once memory + pointers + structs are all comfortable together)
+
+Memory (trickier ones): realloc (resizing live allocations safely), memmove (overlapping memory regions)
+Strings (parsing-heavy): strtol, strtod, strpbrk, strspn, strcspn (used a lot in writing your own parsers/tokenizers)
+Time-based: clock (performance measuring), mktime, strftime, difftime (calendar/time-zone-aware logic, fiddly edge cases)
+System-level: system, getenv (touches OS/environment, portability concerns)
+Debugging: assert (used well once you're writing larger, multi-function programs worth defending with invariants)
+
+---
+
 ## 🧠 Final Thought
 
 No rush. Just consistency.
