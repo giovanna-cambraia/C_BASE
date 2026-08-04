@@ -21,3 +21,5 @@ int main() {
 
     return 0;
 }
+
+// ? a program that asks the user for a number, then checks if it's a power of 2 (e.g. 1, 2, 4, 8, 16, 32... are powers of 2; 6, 10, 12 are not). 
