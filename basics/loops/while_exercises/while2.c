@@ -23,4 +23,4 @@ int main()
     return 0;
 }
 
-// A C program that asks the user for a number, then prints all its factors (numbers that divide it evenly). For example, if the user enters 12, print 1 2 3 4 6 12.
+// ? A C program that asks the user for a number, then prints all its factors (numbers that divide it evenly). For example, if the user enters 12, print 1 2 3 4 6 12.

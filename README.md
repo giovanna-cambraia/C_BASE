@@ -1,79 +1,279 @@
 # ⚙️ C Playground
 
-A personal learning space for C programming basics — built while I learn step by step.
+![C](https://img.shields.io/badge/Language-C-blue.svg)
+![GCC](https://img.shields.io/badge/Compiler-GCC-orange.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)
+![Status](https://img.shields.io/badge/Status-Learning%20in%20Progress-success.svg)
+![Purpose](https://img.shields.io/badge/Purpose-Education-informational.svg)
 
-This repo is basically my **living notebook** for C:
+A personal learning space for C programming, systems programming fundamentals, memory management, and low-level problem solving.
 
-* if/else logic
-* input handling with `scanf`
-* loops (coming soon)
-* functions (coming soon)
-* random experiments while I learn
+This repository serves as a **living notebook**, containing exercises, experiments, reference implementations, and notes collected while studying the C language.
 
-Nothing fancy. Just raw progress.
+Rather than focusing on polished projects, the goal is to build a strong foundation through repetition, experimentation, and hands-on practice.
 
 ---
 
-## 🚀 Purpose
+# 🚀 Purpose
 
-This repo exists to:
+This repository exists to:
 
 * Practice C fundamentals
-* Keep examples organized
-* Build muscle memory with syntax
-* Track my learning journey over time
+* Learn memory management and pointers
+* Explore the C standard library
+* Organize examples and exercises
+* Build confidence with low-level programming concepts
+* Track learning progress over time
 
-Think of it like:
+Think of it as:
 
-> “GitHub but for my brain compiling C code”
+> "GitHub, but for my brain while learning C."
 
 ---
 
-## 📁 Structure
+# 📁 Repository Structure
 
-Right now it's simple:
-
-```
+```text
 c-playground/
 │
 ├── agent-PyC/
-|   ├── agent-v1/
-|   └── python-v1/
-|
+│   ├── agent-v1/
+│   └── python-v1/
+│
 ├── basics/
-│   ├── arrays
-│   ├── functions-pointers
-│   ├── if-else
-│   ├── input-scanf
-│   ├── loops
-│   ├── pointers
-│   ├── strings(char)    
-│   └── variables
+│   ├── arrays/
+│   ├── functions-pointers/
+│   ├── if-else/
+│   ├── input-scanf/
+│   ├── loops/
+│   ├── math/
+│   ├── pointers/
+│   ├── strings/
+│   ├── structs/
+│   └── variables/
+│
+├── functions/
+│   ├── assert.h - debugging/
+│   ├── ctype.h - character_classification/
+│   ├── math.h - math_functions/
+│   ├── stdbool.h - boolean_type/
+│   ├── stdio.h - input_output/
+│   ├── stdlib.h - general_utilities/
+│   ├── string.h - string_manipulation/
+│   └── time.h - time(date)/
+│
 ├── intermediate/
+│   ├── malloc/
+│   └── srand/
+│
 └── README.md
 ```
 
-More folders will appear as things get more advanced.
+The repository continues to grow as new concepts are learned and explored.
 
 ---
 
-## 🧠 Current Topics
+# 🧠 Current Topics
 
-### ✔️ Basics
+## ✔️ Fundamentals
 
 * Variables
-* `printf`
-* `scanf`
-* `if / else`
-* Comparisons
-* Simple programs
+* Data Types
+* Operators
+* Input and Output
+* Conditionals (`if`, `else`, `switch`)
+* Loops (`for`, `while`, `do-while`)
+* Functions
+* Arrays
+* Strings
+* Structures
+* Pointers
 
+## ✔️ Standard Library Exploration
+
+* `stdio.h`
+* `stdlib.h`
+* `string.h`
+* `math.h`
+* `ctype.h`
+* `stdbool.h`
+* `assert.h`
+* `time.h`
 
 ---
 
-## 🛠️ How to Compile & Run (GCC)
+# 📈 Learning Progress
 
-### 🔹 Step 1: Compile your program
+## Fundamentals
+
+* [x] Variables
+* [x] Data Types
+* [x] Operators
+* [x] Input & Output (`printf`, `scanf`)
+* [x] Conditionals (`if`, `else`)
+* [x] Loops (`for`, `while`)
+* [x] Arrays
+* [x] Functions
+* [x] Strings
+* [x] Structures
+* [x] Basic Pointers
+* [ ] Pointer Arithmetic
+* [ ] Dynamic Memory Allocation
+* [ ] File Handling
+* [ ] Modular Programs
+
+### stdio.h
+
+* [x] printf
+* [x] scanf
+* [x] getchar
+* [x] putchar
+* [x] fgets
+* [x] puts
+* [ ] File Streams
+* [ ] Binary Files
+
+---
+
+# 🔭 Currently Studying
+
+* C fundamentals
+* Standard Input/Output (`stdio.h`)
+* Mathematical functions (`math.h`)
+* Arrays and loops
+* Functions and parameter passing
+* Pointer fundamentals
+* Memory concepts
+
+---
+
+# 📚 Learning Roadmap
+
+## Basic
+
+### Input / Output
+
+* `printf`
+* `scanf`
+* `fgets`
+* `puts`
+* `putchar`
+* `getchar`
+
+### Strings
+
+* `strlen`
+* `strcpy`
+* `strcat`
+* `strcmp`
+
+### Math
+
+* `pow`
+* `sqrt`
+* `fabs`
+* `ceil`
+* `floor`
+* `round`
+
+### Conversion
+
+* `atoi`
+* `atof`
+
+### Character Classification
+
+* `isdigit`
+* `isalpha`
+* `isupper`
+* `islower`
+* `toupper`
+* `tolower`
+
+---
+
+## Intermediate
+
+### Memory Management
+
+* `malloc`
+* `calloc`
+* `free`
+* `memset`
+* `memcpy`
+
+### Safer String Manipulation
+
+* `strncpy`
+* `strncat`
+* `strncmp`
+* `strchr`
+* `strstr`
+* `strtok`
+
+### File Handling
+
+* `fopen`
+* `fclose`
+* `fread`
+* `fwrite`
+* `fprintf`
+* `fscanf`
+
+### Algorithms & Utilities
+
+* `qsort`
+* `bsearch`
+* `rand`
+* `srand`
+
+### Program Control
+
+* `exit`
+* `atexit`
+
+---
+
+## Advanced
+
+### Memory
+
+* `realloc`
+* `memmove`
+
+### Parsing & Data Processing
+
+* `strtol`
+* `strtod`
+* `strpbrk`
+* `strspn`
+* `strcspn`
+
+### Time & Performance
+
+* `clock`
+* `mktime`
+* `strftime`
+* `difftime`
+
+### System Interaction
+
+* `system`
+* `getenv`
+
+### Debugging
+
+* `assert`
+
+This is generally where pointers, memory management, structures, and problem-solving start coming together.
+
+---
+
+# 🛠️ How to Compile & Run
+
+## GCC
+
+Compile:
 
 ```bash
 gcc filename.c -o output
@@ -82,10 +282,10 @@ gcc filename.c -o output
 Example:
 
 ```bash
-gcc basics/if-else.c -o ifelse
+gcc basics/variables/second.program.c -o second
 ```
 
-### 🔹 Step 2: Run it
+Run:
 
 ```bash
 ./output
@@ -94,80 +294,103 @@ gcc basics/if-else.c -o ifelse
 Example:
 
 ```bash
-./ifelse
+./second
 ```
 
 ---
 
-## ⚡ Using Code Runner (VS Code)
+# ⚡ VS Code Setup
 
-If you're using **Code Runner extension**, you can run C files instantly:
+If you're using VS Code:
 
-### ✔️ Setup
+## Install
 
-1. Install **Code Runner** extension in VS Code
-2. Make sure GCC is installed and added to PATH
-3. Open a `.c` file
+* GCC (MinGW/MSYS2)
+* VS Code
+* Code Runner Extension (optional)
 
-### ▶️ Run
+## Run
 
-* Click **Run Code**
-* Or use shortcut:
+Use:
 
-```
+```text
 Ctrl + Alt + N
 ```
 
-### 💡 Tip
+or run directly from the integrated terminal.
 
-If input (`scanf`) doesn’t work properly in Code Runner:
+### Code Runner Tip
 
-* Enable "Run In Terminal" in settings:
+If `scanf()` does not behave correctly:
 
 ```json
-"code-runner.runInTerminal": true
+{
+  "code-runner.runInTerminal": true
+}
 ```
 
----
-
-## 📌 Notes
-
-* This repo is a **learning sandbox**, not production code
-* Expect messy experiments
-* Expect broken stuff
-* That’s the point
+This allows programs that require user input to work properly.
 
 ---
 
-## Basic
+# 📌 Notes
 
-I/O: printf, scanf, fgets, putchar, getchar, puts
-Strings: strlen, strcpy, strcat, strcmp
-Math: pow, sqrt, fabs, ceil, floor, round
-Conversion: atoi, atof
-Char classification: isdigit, isalpha, isupper, islower, toupper, tolower
-
-## Intermediate (once pointers + memory click — next real milestone)
-
-Memory: malloc, calloc, free, memset, memcpy
-Strings (safer/more powerful): strncpy, strncat, strncmp, strchr, strstr, strtok
-File I/O: fopen, fclose, fread, fwrite, fgets (file mode), fprintf
-Sorting/searching: qsort, bsearch
-Random: rand, srand
-Program control: exit, atexit
-
-This tier requires understanding pointers (since malloc returns one, strtok mutates via pointers, fread/fwrite work on buffers) — this is genuinely the tier where "thinking in C" either clicks or doesn't, since almost everything here touches memory directly.
-
-## Advanced (once memory + pointers + structs are all comfortable together)
-
-Memory (trickier ones): realloc (resizing live allocations safely), memmove (overlapping memory regions)
-Strings (parsing-heavy): strtol, strtod, strpbrk, strspn, strcspn (used a lot in writing your own parsers/tokenizers)
-Time-based: clock (performance measuring), mktime, strftime, difftime (calendar/time-zone-aware logic, fiddly edge cases)
-System-level: system, getenv (touches OS/environment, portability concerns)
-Debugging: assert (used well once you're writing larger, multi-function programs worth defending with invariants)
+* This repository is a learning sandbox.
+* Many examples are intentionally small and focused.
+* Some code may be rewritten later as understanding improves.
+* Expect experimentation, mistakes, and refactoring.
+* Growth is part of the process.
 
 ---
 
-## 🧠 Final Thought
+# 🎯 Long-Term Goals
 
-No rush. Just consistency.
+* Become comfortable with pointers and memory management.
+* Build larger terminal applications.
+* Learn debugging techniques.
+* Transition into embedded systems development.
+* Explore operating systems and low-level programming.
+* Use C as a foundation for systems programming and computer architecture concepts.
+
+---
+
+# 🎯 Next Milestones
+
+* Learn pointer arithmetic
+* Understand memory addresses deeply
+* Master `malloc`, `calloc`, `realloc`, and `free`
+* Read and write files with `fopen`
+* Build terminal-based projects
+* Create larger multi-file applications
+* Explore data structures in C
+* Transition toward embedded systems development
+
+---
+
+# Special Thanks To
+
+A huge thank you to the creators and educators whose content helped shape this repository:
+
+* **Bro Code** for the excellent C programming tutorials and the comprehensive 6-hour C course.
+* **FreeCodeCamp** for providing free, high-quality programming education and numerous C programming resources.
+* The broader **C programming community**, whose articles, discussions, books, and open-source projects make learning low-level programming more accessible.
+
+Many examples, exercises, and ideas found throughout this repository were inspired by, adapted from, or expanded upon concepts presented in these learning resources while studying the language.
+
+---
+
+# 🧠 Final Thought
+
+There is no finish line here.
+
+The goal is simple:
+
+Write code.
+
+Break things.
+
+Fix them.
+
+Learn something new.
+
+Repeat.
