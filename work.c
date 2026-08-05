@@ -1,22 +1,26 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int num;
 
     printf("Enter a number: ");
     scanf("%d", &num);
 
-    while(num > 1) {
-        if(num % 2 != 0) {
-            break;
+    for (int i = 2; i <= num; i++)
+    {
+        int isPrime = 1;
+        for (int j = 2; j < i; j++)
+        {
+            if (i % j == 0)
+            {
+                isPrime = 0;
+            }
         }
-        num = num / 2;
-    }
-
-    if(num == 1) {
-        printf("The number is a power of 2.\n");
-    } else {
-        printf("The number is not a power of 2.\n");
+        if (isPrime)
+        {
+            printf("Primes of %d: %d\n", num, i);
+        }
     }
 
     return 0;
