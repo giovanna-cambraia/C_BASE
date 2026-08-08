@@ -87,7 +87,8 @@ The repository continues to grow as new concepts are learned and explored.
 * Arrays
 * Strings
 * Structures
-* Pointers
+* Pointers (basic + pointer-to-pointer)
+* Bitwise Operators
 
 ## ✔️ Standard Library Exploration
 
@@ -117,8 +118,10 @@ The repository continues to grow as new concepts are learned and explored.
 * [x] Strings
 * [x] Structures
 * [x] Basic Pointers
+* [x] Pointer to Pointer (double pointers)
 * [ ] Pointer Arithmetic
 * [ ] Dynamic Memory Allocation
+* [ ] Bitwise Operators (syntax learned, intuition still building — see "Revisit Later")
 * [ ] File Handling
 * [ ] Modular Programs
 
@@ -142,8 +145,19 @@ The repository continues to grow as new concepts are learned and explored.
 * Mathematical functions (`math.h`)
 * Arrays and loops
 * Functions and parameter passing
-* Pointer fundamentals
+* Pointer fundamentals (including pointer-to-pointer / double pointers)
+* Bitwise operators (`&`, `|`, `^`, `<<`, `>>`) — syntax makes sense, intuition doesn't yet
 * Memory concepts
+
+---
+
+# 🌀 Revisit Later / Still Fuzzy
+
+A running list of things I've been exposed to but haven't fully internalized yet. The goal is to move items out of this section over time, not to avoid it.
+
+* **Bitwise operators** — understand what `&`, `|`, `^`, `<<`, `>>` do mechanically (flipping/comparing bits), but not yet *why/when* real code reaches for them. Need to find practical use cases (flags, masks, permissions) to make it click.
+* **Pointer to pointer (`int **`)** — got the "hops" intuition (each `*` = one hop through memory to reach the value), understand *why* it's needed (e.g. letting a function modify a pointer in the caller, like `int **p` in an `allocate()`-style function), but haven't used it in real code yet.
+* **Pointer arithmetic** — not started.
 
 ---
 
@@ -358,6 +372,7 @@ This allows programs that require user input to work properly.
 
 * Learn pointer arithmetic
 * Understand memory addresses deeply
+* Build practical intuition for bitwise operators (flags, masks, shifting)
 * Master `malloc`, `calloc`, `realloc`, and `free`
 * Read and write files with `fopen`
 * Build terminal-based projects

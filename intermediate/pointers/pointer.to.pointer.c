@@ -21,3 +21,9 @@ int main(void) {
 
     return 0;
 }
+
+// Same chain, just one link longer:
+
+// ppp -> pp -> p -> a
+
+// Number of stars in the type = number of hops needed to reach the actual value.
