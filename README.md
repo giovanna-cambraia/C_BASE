@@ -63,7 +63,9 @@ c-playground/
 │   └── time.h - time(date)/
 │
 ├── intermediate/
+|   ├── bitwise_operators/
 │   ├── malloc/
+|   ├── pointers/
 │   └── srand/
 │
 └── README.md
