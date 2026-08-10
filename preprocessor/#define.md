@@ -1,0 +1,3 @@
+# The core idea: the preprocessor runs before the compiler even sees your code
+
+This is the single most important thing to internalize about macros: #define isn't a C language feature in the way functions/variables are — it's a pure text substitution step that happens before compilation even begins. The preprocessor reads your source file, does find-and-replace based on your #define directives, and hands the result to the actual compiler. The compiler never even knows macros existed — by the time it runs, they're already gone, replaced by plain text.
